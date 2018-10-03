@@ -28,6 +28,8 @@ public class TranscriptionResultParserUtil {
   private final static Options options;
 
   static {
+    System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT] [%4$-7s] %5$s %n");
+
     options = new Options();
 
     Option input = new Option("i", "input", true, "input file to read data from");
